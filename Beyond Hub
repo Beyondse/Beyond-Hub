@@ -1,0 +1,223 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Beyond Hub", "GrapeTheme")
+local Tab = Window:NewTab("script")
+local Section = Tab:NewSection("script")
+Section:NewButton("+1 Speed Per RNG", "ButtonInfo", function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Beyond Hub", "GrapeTheme")
+local Tab = Window:NewTab("Farm")
+local Section = Tab:NewSection("farm")
+
+getgenv().AutoFarm1 = false
+getgenv().AutoFarm2 = false
+getgenv().AutoFarm3 = false
+getgenv().AutoFarm4 = false
+getgenv().AutoFarm5 = false
+getgenv().AutoFarm6 = false
+
+-- 🌀 Toggle 1
+Section:NewToggle("1 (5)", "Teleport", function(state)
+    getgenv().AutoFarm1 = state
+    if state then
+        print("Farm 1 On")
+        task.spawn(function()
+            while getgenv().AutoFarm1 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-37.9999542, 0.619660378, 320.999939, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 1 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 2
+Section:NewToggle("8 (100)", "Teleport", function(state)
+    getgenv().AutoFarm2 = state
+    if state then
+        print("Farm 2 On")
+        task.spawn(function()
+            while getgenv().AutoFarm2 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-38.9999542, 61.7649918, 681.999939, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 2 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 3
+Section:NewToggle("25 (2k)", "Teleport", function(state)
+    getgenv().AutoFarm3 = state
+    if state then
+        print("Farm 3 On")
+        task.spawn(function()
+            while getgenv().AutoFarm3 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-37.9999542, 61.619648, 1061, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 3 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 4
+Section:NewToggle("100 (10k)", "Teleport", function(state)
+    getgenv().AutoFarm4 = state
+    if state then
+        print("Farm 4 On")
+        task.spawn(function()
+            while getgenv().AutoFarm4 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-37.4999542, 0.619675279, 1836, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 4 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 5
+Section:NewToggle("250 (40k)", "Teleport", function(state)
+    getgenv().AutoFarm5 = state
+    if state then
+        print("Farm 5 On")
+        task.spawn(function()
+            while getgenv().AutoFarm5 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-39.999958, 30.6196766, 2123, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 5 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 6
+Section:NewToggle("350 (60k)", "Teleport", function(state)
+    getgenv().AutoFarm1 = state
+    if state then
+        print("Farm 6 On")
+        task.spawn(function()
+            while getgenv().AutoFarm1 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-37.9999542, 31.1825294, 3058, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 6 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 7
+Section:NewToggle("500 (250k)", "Teleport", function(state)
+    getgenv().AutoFarm1 = state
+    if state then
+        print("Farm 7 On")
+        task.spawn(function()
+            while getgenv().AutoFarm1 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-38.9999542, 2048.61963, 3492, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 7 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+
+-- 🌀 Toggle 8
+Section:NewToggle("1000 (750k)", "Teleport", function(state)
+    getgenv().AutoFarm1 = state
+    if state then
+        print("Farm 8 On")
+        task.spawn(function()
+            while getgenv().AutoFarm1 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(-38.9999542, 2048.61963, 5578, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+                task.wait(0.5)
+            end
+        end)
+    else
+        print("Farm 8 Off")
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                    CFrame.new(0, 15.6965437, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                task.wait(0.5)
+    end
+end)
+----------------------------------------------------------------
+local Tab = Window:NewTab("TP")
+local Section = Tab:NewSection("TP")
+Section:NewButton("SHOP", "Shop", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.4610367, 12.0531454, 59.2886696, -9.53674316e-06, -0.629327059, 0.777140617, 1.00000012, -9.53674316e-06, 4.50015068e-06, 4.50015068e-06, 0.777140617, 0.629326999)
+end)
+
+----------------------------------------------------------------
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+Section:NewButton("TP", "ctrlTP", function()
+local UIS = game:GetService("UserInputService")
+
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+
+
+function GetCharacter()
+   return game.Players.LocalPlayer.Character
+end
+
+function Teleport(pos)
+   local Char = GetCharacter()
+   if Char then
+       Char:MoveTo(pos)
+   end
+end
+
+
+UIS.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+       Teleport(Mouse.Hit.p)
+   end
+end)
+end)
+Section:NewButton("infiniteyield", "ADMIN", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("anti afk", "anti afk", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+Section:NewKeybind("Open-Close", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+----------------------------------------------------------------
+end)
